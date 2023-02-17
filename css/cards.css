@@ -1,0 +1,30 @@
+.cards {
+	display: grid;
+	padding-top: 11rem; /* 7.5rem + 3.5rem*/
+	padding-bottom: 2.5rem;
+	grid-template-columns: repeat(
+		4,
+		minmax(0, 1fr)
+	); /* TODO:make it responsive */
+	gap: 2.3vw;
+}
+
+.cards > .card {
+	display: block;
+	height: auto;
+	padding: 30px 1.25rem;
+
+	background-color: #222;
+	border-radius: 15px;
+
+	font-weight: 600;
+}
+
+.cards > .card > .icon {
+	height: 10rem;
+
+	margin-bottom: 1rem;
+	margin-top: -7.5rem;
+
+	filter: drop-shadow(10px 0 25px rgb(0 0 0 / 0.35));
+}

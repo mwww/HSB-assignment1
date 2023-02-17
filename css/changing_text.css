@@ -1,0 +1,13 @@
+#changing_text {
+	opacity: 1;
+	transition: opacity 0.25s ease-out;
+}
+
+/*
+	selector dibawah akan memilih object
+	dengan ID changing_text DAN juga
+	memiliki CLASS anim_fade
+*/
+#changing_text.anim_fade {
+	opacity: 0;
+}

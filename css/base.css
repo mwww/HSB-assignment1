@@ -1,0 +1,46 @@
+/*
+	file ini adalah file basis dari semua CSS di proyek Hariminggu.com.
+	file ini mengandung:
+		- color variable
+		- default styling
+	file ini akan di import ke dalam file CSS yang membutuhkan variable.
+*/
+
+:root {
+	--clr-dk-main: #ccc;
+	--clr-dk-bg: #111;
+
+	--clr-dk-tm-gr: #0fb293;
+	--clr-dk-tm-bl: #3366ff;
+
+	--rnd-1: 10px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--clr-dk-main);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+	height: 42px;
+	padding: 0 1.5rem;
+	background-color: var(--clr-dk-tm-gr);
+	color: var(--clr-dk-bg);
+	border: none;
+	cursor: pointer;
+
+	border-radius: 21px;
+	font-weight: 600;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+}
